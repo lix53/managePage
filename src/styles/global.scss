@@ -1,0 +1,107 @@
+/* 全局样式 */
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: #ececec;
+  color: #1a1a1a;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+/* 主题色变量 */
+:root {
+  --c-primary: #1F3864;
+  --c-primary-2: #2F5496;
+  --c-accent: #4472C4;
+  --c-success: #07c160;
+  --c-warn: #ff976a;
+  --c-danger: #ee0a24;
+  --c-text: #1a1a1a;
+  --c-text-2: #646566;
+  --c-text-3: #969799;
+  --c-border: #ebedf0;
+  --c-bg: #f5f6f8;
+  --c-card: #ffffff;
+}
+
+/* Vant 主题覆盖 */
+:root {
+  --van-primary-color: #1F3864;
+  --van-nav-bar-background: #1F3864;
+  --van-nav-bar-title-text-color: #ffffff;
+  --van-nav-bar-icon-color: #ffffff;
+  --van-nav-bar-text-color: #ffffff;
+  --van-tabbar-item-active-color: #1F3864;
+}
+
+/* 通用样式类 */
+.page {
+  min-height: 100vh;
+  padding-bottom: 60px;
+  background: var(--c-bg);
+}
+
+.card {
+  background: var(--c-card);
+  border-radius: 10px;
+  padding: 14px;
+  margin: 10px 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.flex { display: flex; }
+.flex-1 { flex: 1; }
+.flex-between { display: flex; justify-content: space-between; align-items: center; }
+.flex-center { display: flex; justify-content: center; align-items: center; }
+.text-primary { color: var(--c-primary); }
+.text-2 { color: var(--c-text-2); }
+.text-3 { color: var(--c-text-3); }
+.text-danger { color: var(--c-danger); }
+.text-success { color: var(--c-success); }
+.text-warn { color: var(--c-warn); }
+.fz-12 { font-size: 12px; }
+.fz-14 { font-size: 14px; }
+.fz-16 { font-size: 16px; }
+.fz-18 { font-size: 18px; }
+.fz-20 { font-size: 20px; }
+.fz-24 { font-size: 24px; }
+.bold { font-weight: 600; }
+.mt-4 { margin-top: 4px; }
+.mt-8 { margin-top: 8px; }
+.mt-12 { margin-top: 12px; }
+.mb-8 { margin-bottom: 8px; }
+.mb-12 { margin-bottom: 12px; }
+.ml-4 { margin-left: 4px; }
+.ml-8 { margin-left: 8px; }
+.gap-8 { gap: 8px; }
+.gap-12 { gap: 12px; }
+
+.section-title {
+  padding: 14px 14px 6px;
+  font-size: 14px;
+  color: var(--c-text-2);
+  font-weight: 500;
+}
+
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 18px;
+}
+.tag-blue { background: #e7f0fa; color: #1F3864; }
+.tag-green { background: #e3f9e9; color: #07c160; }
+.tag-orange { background: #fff3e8; color: #ff976a; }
+.tag-red { background: #ffeded; color: #ee0a24; }
+.tag-gray { background: #f2f3f5; color: #646566; }

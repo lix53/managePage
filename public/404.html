@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>黑玛项目管家</title>
+    <script>
+      // GitHub Pages SPA fallback：404 时重定向到首页（hash 路由用不到，留作 history 模式备用）
+      var path = location.pathname;
+      var segs = path.split('/').filter(Boolean);
+      var base = segs.length > 0 ? '/' + segs[0] + '/' : '/';
+      location.replace(base + '#' + path.replace(base, '/'));
+    </script>
+  </head>
+  <body></body>
+</html>

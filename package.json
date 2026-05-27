@@ -1,0 +1,27 @@
+{
+  "name": "blackmart-pm",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "黑玛项目管家 - 工地推进管理小程序 H5 预览版",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:gh": "cross-env VITE_BASE=/managePage/ vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build:gh && gh-pages -d dist -b gh-pages -m \"chore: deploy [skip ci]\""
+  },
+  "dependencies": {
+    "pinia": "^2.2.6",
+    "vant": "^4.9.6",
+    "vue": "^3.5.13",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "cross-env": "^7.0.3",
+    "gh-pages": "^6.2.0",
+    "sass": "^1.83.0",
+    "vite": "^5.4.11"
+  }
+}
